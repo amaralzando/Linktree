@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.container{
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.image{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+}
+
+.image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px #00ffe8;
+    margin-bottom: 20px;
+}
+
+.buttons-container{
+    margin-bottom: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 18px;
+}
+
+.twoFilter {
+    display: flex;
+    width: 432px;
+}
+
+.twitch-btn, .tiktok-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #aa00e9;
+    border-radius: 25px;
+    height: 45px;
+    width: 216px;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 18px 1px rgb(34 228 143 / 65%);
+}
+
+.gasafriend-btn, .github-btn, .likedin-btn, .aplication-btn, .whatsapp-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #aa00e9;
+    border-radius: 25px;
+    height: 45px;
+    width: 432px;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 18px 1px rgb(34 228 143 / 65%);
+}
+
+.gasafriend-btn:hover, .github-btn:hover, .likedin-btn:hover, .aplication-btn:hover, .whatsapp-btn:hover, .twitch-btn:hover, .tiktok-btn:hover{
+    animation-name: wobble-skew;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: top left, bottom right, top right, bottom left;
+}
+
+.buttons-container img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 100px;
+}
+
+.social-container img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    cursor: pointer;
+    background-color: #aa00e9;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 18px 1px rgb(34 228 143 / 65%);
+}
+
+.github-btn img{
+    margin-left: -20px;
+}
+
+.twitch-btn img{
+    margin-left: -20px;
+}
+
+.tiktok-btn img{
+    margin-left: -20px;
+}
+
+.likedin-btn img{
+    margin-left: -5px;
+}
+
+.gasafriend-btn img{
+    margin-left: -10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes wobble-skew{
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-1%, 0, 0) skewX(12deg);
+    }
+
+    50% {
+        transform: translate3d(1%, 0, 0) skewX(-12deg);
+    }
+
+    25% {
+        transform: translate3d(-1%, 0, 0) skewX(12deg);
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .gasafriend-btn, .github-btn, .likedin-btn, .aplication-btn, .whatsapp-btn, .twitch-btn, .tiktok-btn{
+        width: 334px;
+        padding-block: 5px;
+    }
+
+    .whatsapp-btn{
+        text-align: center;
+    }
+}
+
+* {
+    user-select: none;
+}
+
+html, body {
+    overflow: hidden;
+    background-color: #000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #000;
+    margin: 0;
+    /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.dg {
+    opacity: 0.9;
+}
+
+.dg .property-name {
+    overflow: visible;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.ttf') format('truetype');
+}
+
+.bigFont {
+    font-size: 150%;
+    color: #8C8C8C;
+}
+
+.cr.function.appBigFont {
+    font-size: 150%;
+    line-height: 27px;
+    color: #A5F8D3;
+    background-color: #023C40;
+}
+
+.cr.function.appBigFont .property-name {
+    float: none;
+}
+
+.cr.function.appBigFont .icon {
+    position: sticky;
+    bottom: 27px;
+}
+
+.icon {
+    font-family: 'iconfont';
+    font-size: 130%;
+    float: right;
+}
+
+.twitter:before {
+    content: 'a';
+}
+
+.github:before {
+    content: 'b';
+}
+
+.app:before {
+    content: 'c';
+}
+
+.discord:before {
+    content: 'd';
+}
